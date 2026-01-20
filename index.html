@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery Service</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="mainHeader">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="https://cdn-icons-png.flaticon.com/512/7541/7541900.png" alt="Logo"> <span>Food</span>
+            </div>
+
+            <div class="burger" id="burgerBtn">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+            <nav id="navMenu">
+                <ul>
+                    <li><a href="#hero" class="active">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#register">Register</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Search">
+                    <span class="search-icon"> 
+                        <i class="fa-solid fa-magnifying-glass"></i></span></span>
+                </div>
+                <div class="cart-icon">
+                  <i class="fa-solid fa-cart-shopping"></i> 
+                <span class="badge" id="cartCount">0</span>
+</div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container hero-wrapper">
+                <div class="hero-text">
+                    <div class="scooter_delivery">scooter_delivery </div>
+                    <h1>The Fastest <br> Delivery <br> <span>In Your City</span></h1>
+                    <p></p>
+                    <div class="hero-btns">
+                        <button class="btn primary">Order Now</button>
+                        <button class="btn secondary">▶ Order Process</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-cards-grid">
+                        <div class="mini-card">
+                            <img src="images/burger.jpg" alt="Burger">
+                            <h5>Burger</h5>
+                            <span>$10.00</span>
+                        </div>
+                        <div class="mini-card">
+                            <img src="images/pizza.jpg" alt="Pizza">
+                            <h5>Pizza</h5>
+                            <span>$15.50</span>
+                        </div>
+                        <div class="mini-card">
+                            <img src="images/combo.jpg" alt="Combo Meal">
+                            <h5>Combo Meal</h5>
+                            <span>$20.00</span>
+                        </div>
+                        <div class="mini-card">
+                            <img src="images/pasta.jpg" alt="pasta">
+                            <h5>pasta</h5>
+                            <span>$12.00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="popular-section">
+            <div class="container">
+                <div class="section-header">
+                    <h4>Product</h4>
+                    <h2>Most Popular Items</h2>
+                </div>
+                <div class="menu-grid" id="menuContainer">
+                    <p class="loading-text">Loading delicious food...</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="service" class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <h4>Services</h4>
+                    <h2>Why Choose Our Favorite Food</h2>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="icon-box"><i class="fa-solid fa-burger"></i></div>
+                        <h3>Quality Food</h3>
+                        <p>We provide fresh and best quality food for you.</p>
+                    </div>
+                    <div class="service-card shadow-active">
+                        <div class="icon-box"><i class="fa-solid fa-bowl-food"></i></div>
+                        <h3>Healthy Food</h3>
+                        <p>We cook healthy food to simulate your body.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon-box"><i class="fa-solid fa-truck-fast"></i></div>
+                        <h3>Fast Delivery</h3>
+                        <p>We deliver your food as fast as possible.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="balanced-section">
+            <div class="container balanced-wrapper">
+                <div class="balanced-image">
+                    <img src="images/healthy_bowl.jpg" alt="Healthy_Bowl">
+                </div>
+                <div class="balanced-text">
+                    <h4>Testimonials</h4>
+                    <h2>Food Is An Important Part Of A Balanced Diet</h2>
+                    <p>Healthy food is essential for maintaining a balanced diet and promoting overall well-being.</p>
+                    <div class="process-steps">
+                        <div class="step"><span>1</span> Choose</div>
+                        <div class="step"><span>2</span> Prepare</div>
+                        <div class="step"><span>3</span> Deliver</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-section">
+            <div class="container newsletter-bg">
+                <div class="newsletter-content">
+                    <h2>Subscribe To Our Newsletter</h2>
+                    <p>Subscribe to our newsletter for updates and offers.</p>
+                    <form class="subscribe-form" onsubmit="event.preventDefault();">
+                        <input type="email" placeholder="Your Email Address">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+                <img src="images/burger.png" alt="Burger" class="burger">
+            </div>
+        </section>
+
+        <section id="register" class="register-section">
+            <div class="container">
+                <div class="form-wrapper">
+                    <h2>Create Account</h2>
+                    <form id="regForm">
+                        <div class="input-group">
+                            <label>Username</label>
+                            <input type="text" id="username" placeholder="Min 3 chars">
+                            <small class="error">Username too short</small>
+                        </div>
+                        <div class="input-group">
+                            <label>Email</label>
+                            <input type="email" id="email" placeholder="example@mail.com">
+                            <small class="error">Invalid Email Format</small>
+                        </div>
+                        <div class="input-group">
+                            <label>Password</label>
+                            <div class="password-wrapper">
+                                <input type="password" id="password" placeholder="Min 8 chars, 1 Upper, 1 Number">
+                                <span id="togglePass"><div class="icon-box">
+                                    <i class="fa-solid fa-eye"></i></div></span>
+                            </div>
+                            <small class="error">Pass: 8+ chars, 1 Upper, 1 Num</small>
+                        </div>
+                        <button type="submit" class="btn primary full-width">Register</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <div class="logo">Food</div>
+                <p>Healthy food is essential for maintaining a balanced diet and promoting overall well-being.</p>
+                <div class="socials">Facebook | Twitter | Instagram</div>
+            </div>
+            <div class="footer-col">
+                <h4>Opening Restaurant</h4>
+                <p>Sat-Wet: 09:00am-10:00PM</p>
+                <p>Thursday: 09:00am-11:00PM</p>
+                <p>Friday: 09:00am-8:00PM</p>
+            </div>
+            <div class="footer-col">
+                <h4>User Link</h4>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Order Delivery</a>
+                <a href="#">Payment & Tax</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="cookieBanner" class="cookie-banner hidden">
+        <p>This website uses cookies to ensure you get the best experience.</p>
+        <button id="acceptCookies" class="btn primary">Accept</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
